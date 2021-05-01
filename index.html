@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Jeu du pendu</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+	</script>
+</head>
+
+<body>
+
+	<h1> Le jeu du pendu</h1>
+	<div id='pendu'>
+		<canvas id="canvas" width="500" height="500">
+	</div>
+	<div id="categorie">
+		<p id="choix">Choisissez une catégorie</p>
+		<button id="animaux" onclick="Animaux()">Animaux</button>
+    <button id="pays" onclick="Pays()">Pays</button>
+    <button id="sports" onclick="Sports()">Sports</button>
+  </div>
+
+	<div id="jeu">
+		<p id="para"> </p>
+		<button id="rejouer" onclick="rejouer()">Rejouer</button>
+  </div>
+
+  <div id="lettres"></div>
+  
+  <div id="scores">    
+     <table id="table" border=1>
+      <thead>
+           <th>Rang</th><th>Nom</th><th>Erreurs</th><th>Temps</th>
+      </thead>
+      <tr id="top3">
+            <th>1 &#129351</th><td id="11"></td><td id="12"> </td><td id="13"></td>
+      </tr>
+      <tr id="top3">
+            <th>2 &#129352</th><td id="21"></td><td id="22"></td><td id="23"></td>
+      </tr>
+      <tr id="top3">
+           <th>3 &#129353</th><td id="31"></td><td id="32"></td><td id="33"></td>
+      </tr>
+      <tr>
+           <th>4</th><td id="41"></td><td id="42"></td><td id="43"></td>
+      </tr>
+      <tr>
+           <th>5</th><td id="51"></td><td id="52"></td><td id="53"></td>
+      </tr>
+      <tr>
+           <th>6</th><td id="61"></td><td id="62"></td><td id="63"></td>
+      </tr>
+      <tr>
+           <th>7</th><td id="71"></td><td id="72"></td><td id="73"></td>
+      </tr>
+      <tr>
+           <th>8</th><td id="81"></td><td id="82"></td><td id="83"></td>
+      </tr>
+      <tr>
+           <th>9</th><td id="91"></td><td id="92"></td><td id="93"></td>
+      </tr>
+      <tr>
+            <th>10</th><td id="101"></td><td id="102"></td><td id="103"></td>
+      </tr>
+      
+     
+      <button onclick="deleteData()">Effacer scores</button>
+    </table>
+  </div>
+	
+    <script src="script.js"></script>
+  </body>
+</html>
