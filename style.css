@@ -1,6 +1,6 @@
 
 body{
-    background-color : rgba(63, 80, 238, 0.897);
+    background-color :rgba(136, 179, 243, 0.808);
   }
   
   #animaux{
@@ -38,6 +38,7 @@ body{
   }
   
   #scores{
+      margin-bottom: 30px;
       position :relative;
       top :10px;
       left : 200px;
@@ -70,6 +71,7 @@ body{
   }
   
   #divNom{
+    margin-bottom : 20px;
   position : relative;
      top :10px;
       left : 200px;
